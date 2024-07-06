@@ -117,10 +117,8 @@ h3{
     width: 100px;
     
 }
-.imagenrecurso__uno , .imagenrecurso__dos{
-    border-radius: 16px;
-    width: 400px;
-    
+.imagenrecurso__dos{
+    border-radius: 24px;
 }
 
 

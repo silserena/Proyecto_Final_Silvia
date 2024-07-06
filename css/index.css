@@ -28,6 +28,7 @@ a:hover{
     color:#cacacacc;
     transition: 1s;
 }
+
 /* globals */
 .mw{
     max-width: 900px;
@@ -118,6 +119,7 @@ h3{
     justify-content: center;
     margin: 20px 20px 20px 20px;
     width: 100%;
+  
 }
 .container__content{
     display: flex;
@@ -136,6 +138,7 @@ h3{
 .container__texto{
     display: flex;
     flex-direction: row;
+    
     align-items: center;
     justify-content: center;
     margin: 20px 20px 20px 20px;
@@ -153,4 +156,35 @@ h3{
     display: block;
     width:85%;
     font-weight: lighter;
+}
+/*Slider cosas que me gustan*/
+
+.slider__container{
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    gap: 1em;
+}
+.titulo__slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: .3s ease-in-out;
+
+    max-width: 1000px;
+    max-height: 600px;
+   
+
+}
+
+.slider, .slider__img{
+    width: 100vw;
+    object-fit: cover;
 }

@@ -71,23 +71,33 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 1em;
-    background-color: #e2e2e29f; 
+    background-color: #e2e2e2ea; 
     border-radius: 8px;
-
-    margin: 10px 50px 50px 100px;
-   
+    margin: 20px 20px 20px 20px;
+    position: fixed;
+    width: 100%;
     max-width: 100%;
 }
 h1{
     font-size: 80px;
 }
-.header__nav__items, .social__items {
+.social .social__items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: fit-content;
+
+}
+.header__nav__items{
     display: flex;
     flex-direction: row;
     gap: 30px;
     font-size: 1em;
+   
 
 }
+
 
 .social__items:hover{
     fill: #cacacacc;
@@ -115,14 +125,18 @@ h3{
     font-weight: lighter;
 }
 /*IMAGENES*/
-.container__firstblock{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 20px 20px 20px;
+img{
     width: 100%;
+}
+.container__firstblock{
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   
 }
 .container__content{

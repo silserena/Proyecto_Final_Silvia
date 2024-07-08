@@ -36,4 +36,16 @@ setInterval (() => {
 
 }, 5000);
 
+let title = document.querySelector('h1')
+let image = document.querySelector('img')
+
+window.addEventListener('scroll', () =>{
+
+    
+    let scroll = window.pageYOffset
+    let speed = 0.3
+
+    title.style.transform = 'translateY('+scroll * speed+'px)'
+
+})
 

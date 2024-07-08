@@ -11,7 +11,7 @@ window.addEventListener('scroll', () =>{
     } )
 
 })
-/**
+
 // slider
 let imagenes = document.querySelectorAll('.slider__img') 
 let slider = document.querySelector('.slider') 
@@ -35,6 +35,5 @@ setInterval (() => {
 
 
 }, 5000);
- */
 
 

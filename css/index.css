@@ -69,30 +69,39 @@ body{
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 1em;
+    align-items: center;
+    justify-content: center;
     background-color: #e2e2e2ea; 
     border-radius: 8px;
-    margin: 20px 20px 20px 20px;
     position: fixed;
     width: 100%;
     max-width: 100%;
+    margin: 20px 20px 20px 20px;
 }
-h1{
-    font-size: 80px;
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
-.social .social__items{
+.header__nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
-    height: fit-content;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: red;
+    
+}
 
+.social__items{
+    display: flex;
+    flex-direction: row;
+ 
 }
 .header__nav__items{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 1em;
     font-size: 1em;
    
 
@@ -105,6 +114,9 @@ h1{
 }
 
 /*text*/
+h1{
+    font-size: 80px;
+}
 .text__summary{
     display: flex;
     flex-direction: row;

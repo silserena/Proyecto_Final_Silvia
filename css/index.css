@@ -159,7 +159,7 @@ img{
     width: 100px;
     
 }
-.imagenrecurso__dos , .imagenrecurso__uno , .imagenrecurso__tres{
+.imagenrecurso__dos , .imagenrecurso__uno , .imagenrecurso__tres {
     border-radius: 24px;
     width: 400px;
 }
@@ -295,21 +295,8 @@ img{
     align-items: center;
     justify-content: center;
 }
-.container__aboutme__firstblock{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    margin: auto;
-    padding: 1em;
-    gap: 2em;
-}
-.img__aboutme{
-    border-radius: 24px;
-    width: 100px;
+.container__content
 
-}
 
 /*Footer*/
 .footer__container{

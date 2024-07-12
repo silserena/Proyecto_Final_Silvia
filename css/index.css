@@ -402,6 +402,9 @@ img{
     padding: 1em;
      
 }
+.galeria__item:hover{
+    
+}
 
 /*Footer*/
 .footer__container{

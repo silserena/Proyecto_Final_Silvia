@@ -394,17 +394,45 @@ img{
     max-width: 80%;
 
 }
+.item__gallery{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.text__hover{
+    position: absolute;  
+    opacity: 0;   
+    font-weight: 200; 
+}
+.galeria__img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.galeria .galeria__item{
+.galeria .galeria__img{
     width: 100%;
     gap: 1em;
     margin: 1em;
     padding: 1em;
      
 }
-.galeria__item:hover{
-    
+.item__gallery:hover .text__hover {
+    filter: grayscale(100);
+    transition: .5s;
+    opacity: 100%;
+    color: rgb(80, 79, 79);
+ 
+ }
+.item__gallery:hover{
+    filter: grayscale(100);
+    transition: .5s;
+
 }
+
 
 /*Footer*/
 .footer__container{

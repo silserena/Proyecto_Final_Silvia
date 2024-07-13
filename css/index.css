@@ -514,18 +514,34 @@ img{
     gap: 2em;
     padding: 1em;
 }
-.container__bloque__infosingle{
+/*left*/
+.left{
+    padding: 40px;
+    margin: 80;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
-    margin: auto;
-    padding: 2em;
+    margin: 0 auto;
+    max-width: 800%;
+
+
 }
-.content__infosingle{
+
+.left__img, .left__content{
+    flex-basis: 0;
+    flex-grow: 1;
+    font-family: 'Ubuntu';
+
+}
+
+.left__content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 2em;
+    align-items: start;
+
 }
 
 

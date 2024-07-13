@@ -1,7 +1,7 @@
 /**PARALLAX */
 
 let title = document.querySelector('h1')
-let video = document.querySelector('video')
+let imagen = document.querySelector('img')
 
 window.addEventListener('scroll', () =>{
 

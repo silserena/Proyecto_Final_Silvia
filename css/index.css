@@ -307,8 +307,6 @@ img{
     justify-content: center;
     width: 90vw;
     
-   
-
 }
 .aboutme__text__img{
     display: flex;
@@ -338,6 +336,7 @@ img{
     padding: 2em;
     width: 80%;    
 }
+
 /*Skills*/
 
 .skills{
@@ -399,6 +398,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    
   
 }
 .text__hover{
@@ -411,6 +411,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 40px;
+   
 }
 
 .galeria .galeria__img{
@@ -432,6 +434,73 @@ img{
     transition: .5s;
 
 }
+
+/*SINGLE*/ 
+/*PARALLAX*/
+.img__single{
+    width: 100%;
+}
+
+.titulo__single{
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   max-width: 100%;
+}
+
+.single__content__uno{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    gap: 1em;
+    padding: 2em;
+    margin: auto;
+
+}
+.galeria__single{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    max-width: 100%;
+    margin: auto;
+    padding: 2em;
+}
+
+.textos__single{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2em;
+    gap: 2em;
+    margin: auto;
+}
+.herramientasusadas{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+    max-width: 100% ;
+}
+.items__herramientas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em;
+}
+
 
 
 /*Footer*/

@@ -9,16 +9,18 @@
 </head>
 <body>
     <!--Menu header-->
-    <header class="header">
+    <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
         <div class="logo__menu">
             <a href="index.html"><img src="assets/logo volvoretta uxui.svg" alt="logo" width="120px"></a> 
         </div>
-        <nav class="header__nav"></nav>
+        <nav class="header__nav">
             <ul class="header__nav__items">
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </nav>
+        <nav class="header__nav__social">
             <ul class="social__items">
                 <li><a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" ></a></li>
                 <li><a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""></a></li>
@@ -70,21 +72,21 @@
         </div>
      </section>
 
-    <!--galeria-->
+    <!--galeria--> <!-- añadir padding-->
     <section class="container__gallery">
         <div class="content__text mw appear" >
             <p>
             Aqui vas a poder ver una pequeña selección de mi trabajo como diseñadora
             </p>
         </div>
-        <div class="gallery mw appear">
+        <div class="gallery mw appear"><!-- añadir padding-->
              <div class="columnas">
                  <h2 class="numero">01</h2>
                  <div class="columnas__content">
                     <a href="">
                         <p class="titulo">FinanzApp</p>
                         <p class="pill">App Design</p>
-                        <picture source media="(min-width:650px)" srcset=""> 
+                        <picture> 
                             <img class="content__img" src="assets/Frame 766.png" alt="">
                         </picture>
                     </a>

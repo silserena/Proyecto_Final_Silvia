@@ -472,29 +472,31 @@ img{
     gap: 1em;
     padding: 2em;
     margin: auto;
+    font-weight: lighter;
 
 
 }
 .galeria__single{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
     max-width: 100%;
-    margin: auto;
+
     padding: 2em;
+    
 }
 
 .textos__single{
     display: flex;
     flex-direction: row;
+    flex-wrap: ;
     align-items: center;
     justify-content: center;
     max-width: 100%;
     padding: 2em;
     gap: 2em;
     margin: auto;
+    font-weight: lighter;
 }
 .herramientasusadas{
     display: flex;
@@ -513,6 +515,7 @@ img{
     justify-content: center;
     gap: 2em;
     padding: 1em;
+
 }
 /*left*/
 .left{
@@ -530,7 +533,8 @@ img{
 .left__img, .left__content{
     flex-basis: 0;
     flex-grow: 1;
-    font-family: 'Ubuntu';
+    font-family: 'Montserrat';
+    font-weight: lighter;
 
 }
 

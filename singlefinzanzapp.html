@@ -8,23 +8,25 @@
     <script defer src="js/single.js"></script>
 </head>
 <body>
-  <!--Menu header-->
-  <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
+     <!--Menu header-->
+     <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
         <div class="logo__menu">
             <a href="index.html"><img src="assets/logo volvoretta uxui.svg" alt="logo" width="120px"></a> 
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav__items">
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="header__nav__social">
+        <nav class="header__nav__social"> <!--menu hamburguesa-->
             <ul class="social__items">
                 <li><a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" ></a></li>
                 <li><a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""></a></li>
                 <li><a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""></a></li>
+            </ul>
+        </nav>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="header__nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="header__nav__items">
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -54,13 +56,15 @@
         </div>
         <div class="textos__single mw appear">
             <div class="texto__uno__single">
-                <p>aqui va un texto que no se aun que poner pero ira un texto contando algo de la app</p>
+                <p>Nuestro principal objetivo era seguir cada paso del Design Thinking hasta que llegarmos al resultado final. Hicimos mucho trabajo de research, benchmarking, networking, y creamos un user en el que nos basamos para crear nuestra App.
+                    Usamos también la matriz de necesidades, el método Moscow, y el IN and OUT. </p>
             </div>
             <div class="texto__dos__single">
-                <p>aqui va un texto que no se aun que poner pero ira un texto contando algo de la app</p>
+                <p>Siguiendo las ideas y el moodboard que teniamos, fuimos creando también el Design System, y diseñamos nuestra paleta de colores, organizamos y jerarquizamos tipografias, y también los componentes. El último paso fue empezar a crear los wireframes, y diseñarlos. Por último prototipamos todas las pantallas, y fuimos documentando todo el proceso, para poder tener una memoria donde explicar todo el trabajo realizado.</p>
             </div>
             <div class="texto__tres__single">
-                <p>aqui va un texto que no se aun que poner pero ira un texto contando algo de la app</p>
+                <p>No nos dió tiempo a hacer test con usuario, pero, cada una del equipo versionamos la app, hacia el aspecto que más nos gustara. Fue un proyecto muy bonito en el que aprendimos como era la metodologia de los dos rombos y nos sirvió para poder hacer el proyecto final de UXUI.
+                </p>
             </div>
         </div>
         <div class="herramientasusadas mw appear">

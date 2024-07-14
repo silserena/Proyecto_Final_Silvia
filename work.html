@@ -8,26 +8,28 @@
     <script defer src="js/work.js"></script>
 </head>
 <body>
-  <!--Menu header-->
-  <header class="header"> 
+      <!--Menu header-->
+      <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
         <div class="logo__menu">
             <a href="index.html"><img src="assets/logo volvoretta uxui.svg" alt="logo" width="120px"></a> 
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav__items">
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="header__nav__social">
+        <nav class="header__nav__social"> <!--menu hamburguesa-->
             <ul class="social__items">
                 <li><a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" ></a></li>
                 <li><a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""></a></li>
                 <li><a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""></a></li>
             </ul>
         </nav>
-    </header>   
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="header__nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="header__nav__items">
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
      <!--titulo-->
     <section class="container__galeria">
         <div class="titulo">

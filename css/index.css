@@ -937,4 +937,18 @@ img{
         margin: auto;
         
     }
+
+    /*SINGLE*/
+    .titulo__single{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+       
+     }
+     .titulo__h1__single{
+        font-size: 64px;
+     }
 }

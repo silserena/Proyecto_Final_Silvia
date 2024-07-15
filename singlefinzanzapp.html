@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>single finanzapp</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script defer src="js/single.js"></script>
 </head>
 <body>
      <!--Menu header-->
-     <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
+    <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
         <div class="logo__menu">
             <a href="index.html"><img src="assets/logo volvoretta uxui.svg" alt="logo" width="120px"></a> 
         </div>
         <nav class="header__nav__social"> <!--menu hamburguesa-->
             <ul class="social__items">
-                <li><a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" ></a></li>
-                <li><a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""></a></li>
-                <li><a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""></a></li>
+                <li><a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="linkedin" ></a></li>
+                <li><a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt="behance"></a></li>
+                <li><a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt="instagram"></a></li>
             </ul>
         </nav>
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
@@ -26,7 +27,7 @@
             <ul class="header__nav__items">
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="work.html">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contacto.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -34,24 +35,24 @@
     <section class="titulo__single">
         <h1>Finanzapp App</h1>
         <picture>
-            <img class="img__single" src="assets/galeria/finzanzapp 1.jpg" alt="">
+            <img class="img__single" src="assets/galeria/finzanzapp 1.jpg" alt="finanzapp img">
         </picture>
         <div class="single__content__uno mw appear">
             <p>A través de la metodología de trabajo de Design Thinking diseñamos una App que ayudase al Usuario a crearse objetivos de ahorro y le facilitase la gestión de su dinero. <br>
         Ideamos una App que fuese intuitiva, sencilla y atractiva visualmente. Con la idea de que facilitase al usuario crearse una rutina y asi poder cumplir sus objetivos.</p>
             <picture>
-                <img class="img__container__single" src="assets/finanzapp pantallas_2.jpg" alt="">
+                <img class="img__container__single" src="assets/finanzapp pantallas_2.jpg" alt="pantallas finanzapp">
             </picture>
         </div>
         <div class="galeria__single mw appear">
             <picture>
-                <img src="assets/finzanzapp pantallas.jpg" alt="">
+                <img src="assets/finzanzapp pantallas.jpg" alt="pantallas finanzapp">
             </picture>
             <picture>
-                <img src="assets/intro.jpg" alt="">
+                <img src="assets/intro.jpg" alt="intro finanzapp">
             </picture>
             <picture>
-                <img src="assets/MEJORAS__finanzapp.jpg" alt="">
+                <img src="assets/MEJORAS__finanzapp.jpg" alt="finanzapp img">
             </picture>
         </div>
         <div class="textos__single mw appear">
@@ -70,8 +71,8 @@
         <div class="herramientasusadas mw appear">
             <h3>Programas usados</h3>
             <div class="items__herramientas">
-                <img src="assets/Figma.svg" alt="">
-                <img src="assets/Photoshop.svg" alt="">
+                <img src="assets/Figma.svg" alt="icono figma">
+                <img src="assets/Photoshop.svg" alt="icono ps">
             </div>
         </div>
     </section>
@@ -79,7 +80,7 @@
      <section class="footer__container">
         <div class="hablemos__text mw appear">
             <p>Si te gusta lo que has visto</p>
-            <h2>Let's talk!</h2>
+            <h2 class="titulo__footer">Let's talk!</h2>
             <a href="">sserena292@gmail.com</a>
         </div>
         <div class="nombre">
@@ -92,6 +93,5 @@
             <a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""width="40px"></a>
         </div>
     </section>
-     
 </body>
 </html>

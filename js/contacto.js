@@ -1,3 +1,4 @@
+/** appear */
 let appearElement = document.querySelectorAll('.appear')
 
 window.addEventListener('scroll', () =>{

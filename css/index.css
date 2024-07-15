@@ -27,7 +27,7 @@ a:hover{
     transition: 1s;
 }
 
-/* globals */
+/* globals, para poder hacer la animacion de appear */
 .mw{
     max-width: 900px;
     margin: 0 auto;
@@ -44,7 +44,7 @@ body{
     font-family: Content;
     background-color: #F0F0F0;
 }
-/*Intro*/
+/*Intro - logo y hover*/
 
 .logo__intro{
     display: block;
@@ -62,7 +62,7 @@ body{
     cursor: pointer;
     transition: 1s;
 }
-/* Menu */
+/* Menu - menu hamburguesa abajo */
 .logo__menu{
     display: flex;
     justify-content: start;
@@ -126,13 +126,14 @@ body{
     transition: 1s;
 }
 
+/*Para el menu hamburguesa*/
 .abrir-menu, .cerrar-menu {
     display: none;
 }
 
 
 
-/*text*/
+/*text index*/
 h1{
     font-size: 80px;
 }
@@ -154,7 +155,7 @@ h1{
     font-weight: lighter ;
 }
 
-/*IMAGENES*/
+/*IMAGENES DEL INDEX*/
 img{
     width: 100%;
 }
@@ -212,7 +213,7 @@ img{
    
 }
 
-/*Galeria horizontal*/
+/*Galeria columnas con numero en index - horizontal*/
 
 .container__gallery {
    display: flex;
@@ -532,7 +533,7 @@ img{
     padding: 1em;
 
 }
-/*left*/
+/*left - imagen con texto*/
 .left{
     padding: 40px;
     margin: 80;
@@ -563,7 +564,7 @@ img{
     align-items: start;
 
 }
-/*Contacto*/
+/*Contacto - formulario contacto */
 .container__contacto{
     display: flex;
     flex-direction: column;

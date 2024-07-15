@@ -1,4 +1,5 @@
-let appearElement = document.querySelectorAll('.appear')
+/** appear */
+let appearElement = document.querySelectorAll('.appear') 
 
 window.addEventListener('scroll', () =>{
     appearElement.forEach( (appear) =>{

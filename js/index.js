@@ -1,3 +1,4 @@
+/** appear */
 let appearElement = document.querySelectorAll('.appear')
 
 window.addEventListener('scroll', () =>{
@@ -36,4 +37,30 @@ setInterval (() => {
 
 }, 5000);
 
+//Parallax
 
+let title = document.querySelector('h1')
+let image = document.querySelector('img')
+
+window.addEventListener('scroll', () =>{
+
+    
+    let scroll = window.pageYOffset
+    let speed = 0.3
+
+    title.style.transform = 'translateY('+scroll * speed+'px)'
+
+})
+
+/** menu hamburguesa */
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})

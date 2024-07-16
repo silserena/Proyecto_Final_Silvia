@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +9,25 @@
     <script defer src="js/work.js"></script>
 </head>
 <body>
-      <!--Menu header-->
-      <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
+    <!--Menu header-->
+    <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
         <div class="logo__menu">
-            <a href="index.html"><img src="assets/logo volvoretta uxui.svg" alt="logo" width="120px"></a> 
+            <a title="logo" href="index.html"><img src="assets/logo_volvoretta.svg" alt="logo"></a> 
         </div>
         <nav class="header__nav__social"> <!--menu hamburguesa-->
             <ul class="social__items">
-                <li><a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" ></a></li>
-                <li><a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""></a></li>
-                <li><a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""></a></li>
+                <li><a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link_icono.svg" alt="icono__linkedin" ></a></li>
+                <li><a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance__icono.svg" alt="icono__behance"></a></li>
+                <li><a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig_icono.svg" alt="icono__ig"></a></li>
             </ul>
         </nav>
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="header__nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="header__nav__items">
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contacto.html">Contact</a></li>
+                <li><a title="categorias" href="aboutme.html">About me</a></li>
+                <li><a title="categorias" href="work.html">Work</a></li>
+                <li><a title="categorias" href="contacto.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -38,38 +38,38 @@
         </div>
         <div class="galeria">  <!--galeria con titulos-->
             <div class="item__gallery">
-               <a href="singlefinzanzapp.html"><picture>
-                    <img class="galeria__img" src="assets/galeria/finzanzapp 1.jpg" alt="finanzapp img">
+               <a title="singlecontent" href="singlefinzanzapp.html"><picture>
+                    <img class="galeria__img" src="assets/galeria/finzanzapp__titulo.jpg" alt="finanzapp img">
                 </picture></a>
                 <h3 class="text__hover">Finanzapp</h3>
             </div>   
             <div class="item__gallery">
-               <a href="singlewebplaat.html"><picture>
-                    <img class="galeria__img" src="assets/galeria/plaat web.jpg" alt="">
+               <a title="singlecontent" href="singlewebplaat.html"><picture>
+                    <img class="galeria__img" src="assets/galeria/plaat__mock.jpg" alt="mockup_img">
                 </picture></a>
                 <h3 class="text__hover">Plaat web</h3>
             </div> 
             <div class="item__gallery">
-                <a href="singleh2oh.html"><picture>
-                    <img class="galeria__img" src="assets/galeria/iphone h2oh.jpg" alt="">
+                <a title="singlecontent" href="singleh2oh.html"><picture>
+                    <img class="galeria__img" src="assets/galeria/iphone__podcast.jpg" alt="iphone_img">
                 </picture></a>
                 <h3 class="text__hover">H2oh</h3>
             </div>
             <div class="item__gallery">
-                <a href="singlevisualdesign.html"><picture>
-                    <img class="galeria__img" src="assets/galeria/visual.jpg" alt="">
+                <a title="singlecontent" href="singlevisualdesign.html"><picture>
+                    <img class="galeria__img" src="assets/galeria/desktop__visual.png" alt="visual_img">
                 </picture></a>
                 <h3 class="text__hover">Visual Design</h3>
             </div>
             <div class="item__gallery">
-                <a href="singleñamapp.html"><picture>
-                    <img class="galeria__img" src="assets/galeria/ñam_.jpg" alt="">
+                <a title="singlecontent" href="singleñamapp.html"><picture>
+                    <img class="galeria__img" src="assets/galeria/app.jpg" alt="app_img">
                 </picture></a>
                 <h3 class="text__hover">Ñam App</h3>
             </div>
             <div class="item__gallery">
-                <a href="singleecom.html"><picture>
-                    <img class="galeria__img" src="assets/galeria/ecom.jpg" alt="">
+                <a title="singlecontent" href="singleecom.html"><picture>
+                    <img class="galeria__img" src="assets/galeria/desktop__ecom__galeria.jpg" alt="ecom_img">
                 </picture></a>
                 <h3 class="text__hover">Ecommerce Web</h3>
             </div>
@@ -77,22 +77,23 @@
 
     </section>
 
-     <!--footer-->
-     <section class="footer__container">
+    <!--footer-->
+    <section class="footer__container">
         <div class="hablemos__text mw appear">
             <p>Si te gusta lo que has visto</p>
             <h2 class="titulo__footer">Let's talk!</h2>
-            <a href="">sserena292@gmail.com</a>
+            <a title="email" href="#">sserena292@gmail.com</a>
         </div>
         <div class="nombre">
             <h3>Silvia Serena </h3>
         </div>
         <div class="items__footer">
-            <a href="">Contacto</a>
-            <a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" width="40px"></a>
-            <a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""width="40px"></a>
-            <a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""width="40px"></a>
+            <a title="contacto" href="">Contacto</a>
+            <a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank" rel="noreferrer"><img src="assets/link_icono.svg" alt="icono linkedin"></a>
+            <a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank" rel="noreferrer"> <img src="assets/behance__icono.svg" alt="icono behance"></a>
+            <a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank" rel="noreferrer"><img src="assets/ig_icono.svg" alt="icono ig"></a>
         </div>
     </section>
+     
 </body>
 </html>

@@ -37,6 +37,8 @@ setInterval (() => {
 
 }, 5000);
 
+//Parallax
+
 let title = document.querySelector('h1')
 let image = document.querySelector('img')
 

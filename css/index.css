@@ -185,7 +185,7 @@ h1{
     font-weight: lighter ;
 }
 
-/*IMAGENES DEL INDEX*/
+/*---IMAGENES DEL INDEX-----*/
 img{
     width: 100%;
 }
@@ -246,7 +246,7 @@ img{
    
 }
 
-/*Galeria columnas con numero en index - horizontal*/
+/*Galeria columnas con proyecto y numero en index - horizontal*/
 
 .container__gallery {
    display: flex;
@@ -311,7 +311,7 @@ img{
     color: var(--main--color);
     width: 120px;
 }
-/*Slider*/
+/*--Slider---*/
 
 .slider__container{
     display: flex;

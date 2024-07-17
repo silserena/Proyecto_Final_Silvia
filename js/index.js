@@ -1,4 +1,5 @@
-/** appear */
+/** -----------appear--------------- */
+//variable declarada
 let appearElement = document.querySelectorAll('.appear')
 
 window.addEventListener('scroll', () =>{
@@ -13,14 +14,16 @@ window.addEventListener('scroll', () =>{
 
 })
 
-// slider
+/** ------------slider---------- */
+
+//variables declaradas
 let imagenes = document.querySelectorAll('.slider__img') 
 let slider = document.querySelector('.slider') 
 let index = 0 
 
 
 
-// - Funciones
+// - Funciones del slider
 
 setInterval (() => {
     if (index < imagenes.length - 1) {
@@ -37,8 +40,9 @@ setInterval (() => {
 
 }, 5000);
 
-//Parallax
+/** ------------Parallax--------- */
 
+//variables declaradas
 let title = document.querySelector('h1')
 let image = document.querySelector('img')
 
@@ -52,15 +56,20 @@ window.addEventListener('scroll', () =>{
 
 })
 
-/** menu hamburguesa */
+/** -------------menu hamburguesa---------- */
+
+//variables declaradas para que afecte a las ID
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
+
+// les añadimos un addeventlistener para que al hacer click encima del icono se haga visible el nav
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
 })
 
+// les añadimos un addeventlistener para que al hacer click encima del icono se cierre el nav
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })

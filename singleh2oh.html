@@ -1,0 +1,110 @@
+<!--
+Los singles son las paginas de cada proyecto, explicando en que consiste y con fotos de cada uno.
+La estructura de todos es la misma, salvo por el contenido, hay un par de proyectos que tienen un bloque menos de texto y otro, 
+que tiene un contenedor más con una imagen y texto.
+
+La estructura que siguen es la siguiente:
+- titulo encima de imagen
+- texto lateral con imagen
+- tres imagenes
+- Columnas con texto
+- herramientas utlizadas, 
+- footer
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2oh podcast</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script defer src="js/single.js"></script>
+</head>
+<body>
+      <!--Menu header-->
+      <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
+        <div class="logo__menu">
+            <a title="logo" href="index.html"><img src="assets/logo_volvoretta.svg" alt="logo"></a> 
+        </div>
+        <nav class="header__nav__social"> <!--menu hamburguesa-->
+            <ul class="social__items">
+                <li><a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link_icono.svg" alt="icono__linkedin" ></a></li>
+                <li><a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance__icono.svg" alt="icono__behance"></a></li>
+                <li><a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig_icono.svg" alt="icono__ig"></a></li>
+            </ul>
+        </nav>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="header__nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="header__nav__items">
+                <li><a title="categorias" href="aboutme.html">About me</a></li>
+                <li><a title="categorias" href="work.html">Work</a></li>
+                <li><a title="categorias" href="contacto.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!--Proyecto-->
+     <section class="titulo__single">
+        <h1 class="titulo__h1__single">h2oh podcast</h1><!--titulo con foto introductoria-->
+        <picture>
+            <img class="img__single" src="assets/slider_podcast_.jpg" alt="podcast">
+        </picture>
+        <div class="single__content__uno mw appear"> <!--texto con foto lateral-->
+            <p>H2oh! es el podcast sobre tecnología y nuevas tendencias digitales de Hadoqmedttia. Dirigido y presentado por Gonzalo Gómez-del Estal y con la colaboración de Jaime Diego, 'H2oh' ofrecerá episodios quincenales que destacarán entrevistas exclusivas con CEOs, directores generales y CIOs de empresas líderes en tecnología.
+            </p>
+            <picture>
+                <img class="img__container__single" src="assets/galeria/podcast__intro.jpg" alt="podcast">
+            </picture>
+        </div>
+        <div class="galeria__single mw appear"><!--galeria de 3 fotos con animacion appear-->
+            <picture>
+                <img src="assets/galeria/podcast__pantallas.jpg" alt="img podcast">
+            </picture>
+            <picture>
+                <img src="assets/slider-podcast.jpg" alt="img podcast">
+            </picture>
+            <picture>
+                <img src="assets/galeria/iphone__podcast.jpg" alt="img podcast">
+            </picture>
+        </div>
+        <div class="textos__single mw appear"><!--tres columnas con texto-->
+            <div class="texto__uno__single">
+                <p>Este fue un proyecto de rediseño web. H2oh tenia una web que no estaba mal, pero necesitaban mejorar su diseño y hacerlo también más operativo y userfriendly.</p>
+            </div>
+            <div class="texto__dos__single">
+                <p>Fue un proyecto que lleve mano a mano con los chicos de desarollo de Hadoqmedia. Fue un gusto trabajar con ellos, porque me lo pusieron todo muy fácil. No es una web normal y corriente, sino que tiene el fondo interactivo, se mueve. </p>
+            </div>
+            <div class="texto__tres__single">
+                <p>Las interacciones entre los componentes también son espciales, tiene mucho trabajo de JS, y también está enfocada a que cuando se use en mobile la web, parezca una app.</p>
+            </div>
+        </div>
+        <div class="herramientasusadas mw appear"><!--herramientas usadas-->
+            <h3>Programas usados</h3>
+            <div class="items__herramientas">
+                <img src="assets/fgima__icono.svg" alt="icono figma">
+                <img src="assets/ps_icono.svg" alt="icono Photoshop">
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer__container">
+        <div class="hablemos__text mw appear">
+            <p>Si te gusta lo que has visto</p>
+            <h2 class="titulo__footer">Let's talk!</h2>
+            <a title="email" href="#">sserena292@gmail.com</a>
+        </div>
+        <div class="nombre">
+            <h3>Silvia Serena </h3>
+        </div>
+        <div class="items__footer">
+            <a title="contacto" href="contacto.html">Contacto</a>
+            <a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank" rel="noreferrer"><img src="assets/link_icono.svg" alt="icono linkedin"></a>
+            <a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank" rel="noreferrer"> <img src="assets/behance__icono.svg" alt="icono behance"></a>
+            <a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank" rel="noreferrer"><img src="assets/ig_icono.svg" alt="icono ig"></a>
+        </div>
+    </section>
+     
+</body>
+</html>

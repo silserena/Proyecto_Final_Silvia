@@ -23,7 +23,6 @@
     --body2-desktop: 0.823em;
 }
 
-
 /*RESET*/
 
 *{
@@ -96,79 +95,111 @@ body{
     font-family: Content;
     background-color: var(--background-color);
 }
+/*Menu nuevo */
 
-/* Menu - menu hamburguesa abajo */
-.logo__menu{
-    display: flex;
-    justify-content: start;
-    padding-left: 1em;
-    width: 200px;
-    flex-basis: 0;
-    flex-grow: 1;
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--menu--color); 
-    border-radius: 8px;
-
-    height: 10vh;
-    width: 97.5vw;
-    margin: 20px 20px 20px 20px;
-}
-/*About, work contact - container*/
-.header__nav{
-    display: flex;
-    flex-direction: row;
-    flex-basis: 0;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: end;
-    gap: 4em;
-    padding-right: 2em;
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 16px;
     
 }
 
-/*Ig, Linkedin y Behance - container*/
-.header__nav__social{
-    display: flex;
-    flex-direction: row;
-    flex-basis: 0;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    
+.header {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background-color: var(--menu--color);
+
 }
-/*Items ig, linkedin y behance*/
-.social__items{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
- 
+
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/computer.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
 }
-/*Items about, contact y work*/
-.header__nav__items{
+
+
+/* Nav */
+
+.nav__logo{
+    width: 100%;
+    max-width: 100px;
+}
+
+.nav {
+    padding: 2em;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    border-radius: 16px;
+}
+
+.nav__title {
+    font-weight: 300;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
     gap: 2em;
-
 }
 
-
-.social__items:hover{
-    fill: var(--hover--color);
-    transition: 1s;
+.nav__items {
+    list-style: none;
 }
 
-/*Para el menu hamburguesa*/
-.abrir-menu, .cerrar-menu {
+.nav__links {
+    color: black;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
     display: none;
 }
 
+.nav__img {
+    display: block;
+    width:  30px;
+}
+
+
+.nav__close {
+    display: var(--show, none);
+}
+
+
+
+
+/* About me portfolio container */
+
+.me__container {
+    max-width: 100%;
+    padding:  0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.me__title {
+    font-size: 3rem;
+}
 
 
 /*text index*/
@@ -707,90 +738,71 @@ img{
 
 }
 
+
+
+
 /*MENU HAMBURGUESA
 
 Aqui están los media para poder ajustar el contenido de las pantallas al responsive, además del menu de hamburguesa.
 
 - En el menu de hamburguesa, como he comentado anteriormente, las opciones de about me, work y contact se juntan en el menu hamburguesa, que al pinchar en ella se despliega a la derecha y tiene la X para cerrar.*/
 
-@media screen and (max-width: 550px) {
-    .abrir-menu,
-    .cerrar-menu {
+@media (max-width:800px){
+    .nav__menu{
         display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-        flex-basis: 0;
-         flex-grow: 1;
+        padding: auto;
+
+
     }
 
-    .abrir-menu {
-        color: #1c1c1c;
+    .nav__img {
+        display: block;
+        width:  30px;
+        padding: auto;
     }
 
-    .cerrar-menu {
-        color: #ececec;
+    .nav__links {
+        color: #fff;
+        text-decoration: none;
     }
-    .header{
-        display: flex;
-        flex-direction: row;
-        flex-basis: 0;
-        flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-        background-color: #e2e2e2ea; 
-       width: 100%;
-        gap: 1rem;
-        margin: auto;
-    }
-
-    .header__nav{
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
+ 
+    .nav__link--menu{
+        position: fixed;
         background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        flex-basis: 0;
-        flex-grow: 1;
-    }
-    .header__nav__social{
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        flex-basis: 0;
-        flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-
-        
-    }
-
-    .header__nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .header__nav__items{
         flex-direction: column;
-      
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
     }
 
-    .header__nav__items li a {
-        color: #ecececec;
+    .nav__link--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+    }
+
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
     }
 }
 
+
+
 /* Aqui empieza la parte responsive del resto de pantallas
 */
-@media screen and (max-width: 550px) {
+@media screen and (max-width:800px) {
 
     /*INDEX - TITULO Y SUBTITULO*/
     .text__summary{

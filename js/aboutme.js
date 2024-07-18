@@ -17,21 +17,3 @@ window.addEventListener('scroll', () =>{ // función arrow
     } )
 
 })
-
-/** -------------menu hamburguesa---------- */
-
-//variables declaradas para que afecte a las ID
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
-
-
-// les añadimos un addeventlistener para que al hacer click encima del icono se haga visible el nav
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-})
-
-// les añadimos un addeventlistener para que al hacer click encima del icono se cierre el nav
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-})

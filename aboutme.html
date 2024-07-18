@@ -7,100 +7,104 @@ Para que fuese mas completo
  -->
 
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aboutme - proyecto final</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <script defer src="js/aboutme.js"></script>
-</head>
-<body>
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>aboutme - proyecto final</title>
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+     <script defer src="js/aboutme.js"></script>
+     <script defer src="js/menu.js"></script>
+ </head>
+ <body>
       <!--Menu header-->
-      <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
-        <div class="logo__menu">
-            <a title="logo" href="index.html"><img src="assets/logo_volvoretta.svg" alt="logo"></a> 
-        </div>
-        <nav class="header__nav__social"> <!--menu hamburguesa-->
-            <ul class="social__items">
-                <li><a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link_icono.svg" alt="icono__linkedin" ></a></li>
-                <li><a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance__icono.svg" alt="icono__behance"></a></li>
-                <li><a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig_icono.svg" alt="icono__ig"></a></li>
-            </ul>
-        </nav>
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="header__nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-            <ul class="header__nav__items">
-                <li><a title="categorias" href="aboutme.html">About me</a></li>
-                <li><a title="categorias" href="work.html">Work</a></li>
-                <li><a title="categorias" href="contacto.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
- <!--About me imagenes y titulo-->
-     <section class="container__firstblock__aboutme ">
-        <div class="text__summary mw appear">
-            <h1 class="titulo">About me</h1>
-        </div>  
-         <!--textos about me, dos columnas-->  
-        <div class="container__content__aboutme">
-            <div class="aboutme__text__img">
-                    <picture>
-                        <img class="imagen__aboutme mw appear" src="assets/silviaserena_web_aboutme.jpg" alt="">
-                    </picture>
-                    <p class="bloque__textouno mw appear">¡Hola! Soy Silvia, soy una diseñadora multidisciplinar, tengo experiencia como fotógrafa y retocadora. He trabajado con grandes marcas del grupo Inditex durante 6 años. Decidí dar un giro a mi trayectoria profesional y actualmente trabajo como UX-UI Designer en Apparell.🚀<br>
-                Anteriormente estuve en dos estudios de retoque, donde trabajé como retocadora de Zara.com, y también con marcas como Pull&Bear, Stradivarius, Tempe, o Ecoalf, entre tantas. También pasé una temporada en la Terreta, Valencia. Donde fui coordinadora de retoque y conocí a gente maravillosa. </p><br>
-            </div>
-            <div class="bloques__textosaboutme">
-                <p class="bloque__textodos mw appear"> Decidí dar un giro a mi trayectoria profesional porque dedicarme al diseño siempre habia sido mi sueño, y en cuanto conocí el mundo del UX-UI, supe que era a lo que me queria dedicar.
-                                Dediqué todos mis esfuerzos en ir aprendiendo conceptos, herramientas, metodologias de trabajo Ágiles... todo, y hoy en dia no me imagino sin pasar un dia conectada a Figma, o sin enterarme de las últimas actualizaciones que sacan.</p><br>
-                 <p class="bloque__textotres mw appear">Lo que más me gusta de diseñar es que cada proyecto es diferente, y cambiante. Me gusta cuando consigo lograr la idea que tenía en mente, y el elemento sorpresa cuando se lo enseño ya sea al cliente o los compañeros. Soy una persona muy meticulosa, trabajo al detalle, de manera limpia e intento estar actualizada de las últimas novedades en herramientas de diseño y comunicación.</p>                
-            </div>
-        </div>
-         <!--skills sobre habilidades  con pills-->  
-        <div class="skills mw appear">
-            <div class="softskills">
-                <h3 class="titulo__softskills">Soft skills</h3>
-                <div class="skills__items">
-                    <a title="skills" class="skills__items__style" href="#"><p>Empática</p></a>
-                    <a title="skills" class="skills__items__style" href="#"><p>Comprometida</p></a>
-                    <a title="skills" class="skills__items__style" href="#"> <p>Comunicadora</p></a>
-                    <a title="skills" class="skills__items__style" href="#"><p>Trabajadora</p></a>
-                </div>
-            </div>
-            <div class="hardskills">
-                <h3 class="titulo__hardskills">Hard Skills</h3>
-                <div class="skills__items">
-                    <a class="skills__items__style" href="#"><p>Figma</p></a>
-                    <a class="skills__items__style" href="#"><p>Html</p></a>
-                    <a class="skills__items__style" href="#"><p>CSS</p></a>
-                    <a class="skills__items__style" href="#"><p>Photoshop</p></a>
-                    <a class="skills__items__style" href="#"><p>Illustrator</p></a>
-                </div>
-            </div>
-        </div>
-     </section>
-   <!--footer-->
-
-    <section class="footer__container">
-        <div class="hablemos__text mw appear">
-            <p>Si te gusta lo que has visto</p>
-            <h2 class="titulo__footer">Let's talk!</h2>
-            <a title="email" href="#">sserena292@gmail.com</a>
-        </div>
-        <div class="nombre">
-            <h3>Silvia Serena </h3>
-        </div>
-        <div class="items__footer">
-            <a title="contacto" href="contacto.html">Contacto</a>
-            <a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank" rel="noreferrer"><img src="assets/link_icono.svg" alt="icono linkedin"></a>
-            <a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank" rel="noreferrer"> <img src="assets/behance__icono.svg" alt="icono behance"></a>
-            <a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank" rel="noreferrer"><img src="assets/ig_icono.svg" alt="icono ig"></a>
-        </div>
-    </section>
+      <header class="header container">
+         <nav class="nav container">
+             <div class="nav__logo">
+                <a href="index.html"><img src="./assets/logo_volvoretta.svg" alt="logo"></a> 
+             </div>
  
-</body>
-</html>
+             <ul class="nav__link nav__link--menu">
+                 <li class="nav__items">
+                     <a href="./aboutme.html" class="nav__links">About me</a>
+                 </li>
+                 <li class="nav__items">
+                     <a href="./work.html" class="nav__links">Work</a>
+                 </li>
+                 <li class="nav__items">
+                     <a href="./contacto.html" class="nav__links">Contact</a>
+                 </li>
+              <img src="./assets/close.svg" class="nav__close" alt="icon-close">
+             </ul>
+ 
+             <div class="nav__menu">
+                 <img src="./assets/menu.svg" class="nav__img" alt="icon-menu">
+             </div>
+         </nav>
+     </header>
+  <!--About me imagenes y titulo-->
+      <section class="container__firstblock__aboutme container ">
+         <div class="text__summary mw appear">
+             <h1 class="titulo">aboutme</h1>
+         </div>  
+          <!--textos about me, dos columnas-->  
+         <div class="container__content__aboutme">
+             <div class="aboutme__text__img">
+                     <picture>
+                         <img class="imagen__aboutme mw appear" src="assets/silviaserena_web_aboutme.jpg" alt="">
+                     </picture>
+                     <p class="bloque__textouno mw appear">¡Hola! Soy Silvia, soy una diseñadora multidisciplinar, tengo experiencia como fotógrafa y retocadora. He trabajado con grandes marcas del grupo Inditex durante 6 años. Y decidí dar un giro a mi trayectoria profesional y actualmente trabajo como UX-UI Designer en Apparell.🚀<br>
+                 Anteriormente estuve en dos estudios de retoque, donde trabajé como retocadora de zara.com, y también con marcas como Pull&Bear, Stradivarius, Tempe, o Ecoalf, entre tantas. También pasé una temporada en la Terreta, Valencia. Donde fui coordinadora de retoque y conocí a gente maravillosa. </p><br>
+             </div>
+             <div class="bloques__textosaboutme">
+                 <p class="bloque__textodos mw appear"> Decidí dar un giro a mi trayectoria profesional porque dedicarme al Diseño siempre habia sido mi sueño, y en cuanto conocí el diseño UX-UI, supe que era a lo que me queria dedicar.
+                                 Dedique todos mis esfuerzos en ir aprendiendo conceptos, herramientas, metodologias de trabajo Ágiles... todo, y hoy en dia no me imagino sin pasar un dia conectada a Figma, o sin enterarme de las ultimas actualizaciones que sacan.</p><br>
+                  <p class="bloque__textotres mw appear">Lo que más me gusta de diseñar es que cada proyecto es diferente, y cambiante. Me gusta cuando consigo lograr la idea que tenia en mente, y el elemento sorpresa cuando se lo enseño ya sea al cliente o compañeros. Soy una persona muy meticulosa, trabajo al detalle, de manera limpia e intento estar actualizada de las ultimas novedades en herramientas de diseño y comunicación.</p>                
+             </div>
+         </div>
+          <!--skills sobre habilidades  con pills-->  
+         <div class="skills mw appear">
+             <div class="softskills">
+                 <h3 class="titulo__softskills">Soft skills</h3>
+                 <div class="skills__items">
+                     <a title="skills" class="skills__items__style" href="#"><p>Empática</p></a>
+                     <a title="skills" class="skills__items__style" href="#"><p>Comprometida</p></a>
+                     <a title="skills" class="skills__items__style" href="#"> <p>Comunicadora</p></a>
+                     <a title="skills" class="skills__items__style" href="#"><p>Trabajadora</p></a>
+                 </div>
+             </div>
+             <div class="hardskills">
+                 <h3 class="titulo__hardskills">Hard Skills</h3>
+                 <div class="skills__items">
+                     <a class="skills__items__style" href="#"><p>Figma</p></a>
+                     <a class="skills__items__style" href="#"><p>Html</p></a>
+                     <a class="skills__items__style" href="#"><p>CSS</p></a>
+                     <a class="skills__items__style" href="#"><p>Photoshop</p></a>
+                     <a class="skills__items__style" href="#"><p>Illustrator</p></a>
+                 </div>
+             </div>
+         </div>
+      </section>
+    <!--footer-->
+ 
+     <section class="footer__container container">
+         <div class="hablemos__text mw appear">
+             <p>Si te gusta lo que has visto</p>
+             <h2 class="titulo__footer">Let's talk!</h2>
+             <a title="email" href="#">sserena292@gmail.com</a>
+         </div>
+         <div class="nombre">
+             <h3>Silvia Serena </h3>
+         </div>
+         <div class="items__footer">
+             <a title="contacto" href="contacto.html">Contacto</a>
+             <a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank" rel="noreferrer"><img src="assets/link_icono.svg" alt="icono linkedin"></a>
+             <a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank" rel="noreferrer"> <img src="assets/behance__icono.svg" alt="icono behance"></a>
+             <a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank" rel="noreferrer"><img src="assets/ig_icono.svg" alt="icono ig"></a>
+         </div>
+     </section>
+  
+ </body>
+ </html>

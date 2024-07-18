@@ -95,7 +95,7 @@ body{
     font-family: Content;
     background-color: var(--background-color);
 }
-/*Menu nuevo */
+/*Menu*/
 
 .container {
     width: 100%;
@@ -184,7 +184,7 @@ body{
 
 
 
-/* About me portfolio container */
+/* Inicio - About me portfolio container con titulo*/
 
 .me__container {
     max-width: 100%;
@@ -202,25 +202,6 @@ body{
 }
 
 
-/*text index*/
-
-
-h1{
-    font-size: 80px;
-}
-.text__summary{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    margin: auto;
-    padding: 2em;
-}
-.texto{
-    font-weight: lighter ;
-}
-
 /*---IMAGENES DEL INDEX-----*/
 
 img{
@@ -235,9 +216,7 @@ img{
 
     max-width: 100%;
     gap: 2em;
-   
-   
-  
+     
 }
 .container__content{
     display: flex;

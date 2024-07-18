@@ -743,7 +743,6 @@ Aqui están los media para poder ajustar el contenido de las pantallas al respon
        width: 100%;
         gap: 1rem;
         margin: auto;
-        position: fixed;
     }
 
     .header__nav{

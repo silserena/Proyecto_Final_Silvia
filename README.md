@@ -7,7 +7,7 @@
 
 # Portfolio Silvia
 
-Este es mi sitio web de portafolio donde muestro las tecnologías que he aprendido y aplicado a un proyecto real. Sirve como una demostración de mis habilidades y capacidades en desarrollo web. Cada proyecto destaca diferentes aspectos de estas tecnologías, como diseño responsive, interactividad y estilización.
+Este es mi sitio web de portfolio donde muestro las tecnologías que he aprendido y aplicado a un proyecto real. Sirve como una demostración de mis habilidades y capacidades en desarrollo web. Cada proyecto destaca diferentes aspectos de estas tecnologías, como diseño responsive, interactividad y estilización.
 
 También he utilizado Figma para diseñar la interfaz de usuario de mis proyectos. Figma es una poderosa herramienta de diseño que me permite crear interfaces visualmente atractivas y amigables para el usuario.
 

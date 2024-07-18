@@ -1,72 +1,82 @@
+<!--
+En esta página se explica el comienzo de la web.
+Estrucutura:
+- Header con el menu de desktop y a continuación con los botones del menú de hamburguesa
+- Seguido del header va un titulo diciendo hola, con la animacion de Parallax, que da comienzo a un 
+peuqeño apartado de about me que da comienzo a la web.
+-Una galeria con 3 imágenes
+- Despues un breve texto de presentacion
+- Luego van columnas con trabajos - proyectos hechos con un enlace de "Ver más" que lleva a la pagina de work
+ Termina con el footer el cual tiene un titulo que motiva a ponser en contacto, seguido del contacto: email y rrss
+ Todo aparece con la animacion de Appear
+ -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home proyecto final</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script defer src="js/index.js"></script>
 </head>
 <body>
-    <!--Menu header-->
-        <header class="header">
-            <div class="logo__menu">
-                <img src="assets/logo volvoretta uxui.svg" alt="logo" width="120px">
-             </div>
-       <!--Items Nav-->
-            <nav class="header__nav">
-                <ul class="header__nav__items">
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-         <!--Social-->
-            <div class="social">
-                <ul class="social__items">
-                    <li><a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" width="40px"></a></li>
-                    <li><a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""width="40px"></a></li>
-                    <li><a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""width="40px"></a></li>
-                </ul>
-            </div>
-          </header>
-     <!--About me-->
-     <section class="text__summary">
-        <div class="text__summary__intro">
-            <h1 class="titulo" align="center">Hola!</h1>
-            <h3 class="texto">me llamo Silvia Serena, esta es mi web, aqui podrás ver mi trabajo</h2>
+     <!--Menu header-->
+     <header class="header"> <!-- tres contenedores dentro del header, y los tres con basis 0, flex grow 1, para q me ocupen el mismo espacio, y al de en medio, justify content center-->
+        <div class="logo__menu">
+            <a title="logo" href="index.html"><img src="assets/logo_volvoretta.svg" alt="logo"></a> 
         </div>
-     </section>
-     <!--imagenes-->
-     <section class="container__firstblock">
+        <nav class="header__nav__social"> <!--menu hamburguesa - el menu se contrae y las opciones de about, contact y work se reducen al menu de hamburguesa-->
+            <ul class="social__items">
+                <li><a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link_icono.svg" alt="icono__linkedin" ></a></li>
+                <li><a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance__icono.svg" alt="icono__behance"></a></li>
+                <li><a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig_icono.svg" alt="icono__ig"></a></li>
+            </ul>
+        </nav>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button> <!-- boton del menu hamburguesa para abrir-->
+        <nav class="header__nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button> <!-- boton del menu hamburguesa para cerrar-->
+            <ul class="header__nav__items">
+                <li><a title="categorias" href="aboutme.html">About me</a></li>
+                <li><a title="categorias" href="work.html">Work</a></li>
+                <li><a title="categorias" href="contacto.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--About me imagenes. Aqui van las tres imagenes de presentación, en la version Mobile se reduce a una-->
+    <section class="container__firstblock">
+        <div class="text__summary">
+            <h1 class="titulo">Hola!</h1>
+        </div>    
         <div class="container__content ">
             <div class="imagenrecurso__uno">
                 <picture>
-                    <img class="imagenrecurso__uno" src="assets/37135e0573a6938c3e2ccf3345811c81.jpg" alt="">
+                    <img class="imagenrecurso__uno" src="assets/silviaserena_web_.jpg" alt="img_ordenador">
                 </picture>
             </div>
             <div class="imagenrecurso__dos">
                 <picture>
-                    <img class="imagenrecurso__dos" src="assets/d4e2555ad0c71f6f5fff18676f350cfc.jpg" alt="">
+                    <img class="imagenrecurso__dos" src="assets/silviaserena_.jpg" alt="img_mia">
                 </picture>
             </div>
-            <div class="imagenrecurso__dos">
+            <div class="imagenrecurso__tres">
                 <picture>
-                    <img class="imagenrecurso__tres" src="assets/c7095dbb709c0d449e23ed72c967fe3f (1).jpg" alt="">
+                    <img class="imagenrecurso__tres" src="assets/silviaserena_web_ordenador.jpg" alt="img_ordenador">
                 </picture>
             </div>
         </div>
      </section>
-       <!--texto-->
-     <section class="container__texto">
+       <!--breve texto de presentacion que aparece con la animacion de appear-->
+     <div class="container__texto">
         <div class="bloques__texto mw appear">
             <div class="bloquetexto__uno">
-                <p>Me he dedicado durante muchos años a la fotografía. De moda y artistica. He tenido la oportunidad de trabajar con gente maravillosa, 
-                    y aprender como funciona el mundillo. Pude exponer en Matadero Madrid, mi primera colección, Naturaleza Corpórea. Y he publicado en varias revistas de moda.
+                <p>Me llamo Silvia, y esta es mi web. Estoy en un proceso de renovación profesional. Actualmente me dedico al diseño UX-UI, pero me he dedicado durante muchos años a la fotografía. De moda y artistica. He tenido la oportunidad de trabajar con gente maravillosa, 
+                    y aprender como funciona el mundillo. Pude exponer en Matadero Madrid, mi primera colección, Naturaleza Corpórea.
                 </p>
             </div>
             <div class="bloquetexto__dos">
-                <p> Trabajé como retocadora en dos estudios, con grandes marcas, muchas de ellas del grupo Inditex. Fui retocadora de zara.com durante casi 4 años, y aprendí muchísimo. Fue una experiencia dura y enriquecedora a la vez. Me ha ayudado a ser quien soy hoy en dia.
+                <p>  He tenido la oportunidad de publicar en varias revistas de moda. También, he trabajado como retocadora en dos estudios, con grandes marcas, muchas de ellas del grupo Inditex. Fui retocadora de zara.com durante casi 4 años, y aprendí muchísimo. Fue una experiencia dura y enriquecedora a la vez. Me ha ayudado a ser quien soy hoy en dia.
                 </p>
             </div>
             <div class="bloquetexto__tres">
@@ -75,24 +85,24 @@
                 </p>
             </div>
         </div>
-     </section>
+    </div>
 
-    <!--galeria-->
+    <!--columnas con el trabajo, breve resumen--> <!-- añadir padding-->
     <section class="container__gallery">
         <div class="content__text mw appear" >
             <p>
             Aqui vas a poder ver una pequeña selección de mi trabajo como diseñadora
             </p>
         </div>
-        <div class="gallery mw appear">
+        <div class="gallery mw appear"><!-- añadir padding (corregido)-->
              <div class="columnas">
                  <h2 class="numero">01</h2>
                  <div class="columnas__content">
-                    <a href="">
-                        <p class="titulo">FinanzApp</p>
+                    <a title="single" href="singlefinzanzapp.html">
+                        <p class="titulo__columnas">FinanzApp</p>
                         <p class="pill">App Design</p>
-                        <picture source media="(min-width:650px)" srcset=""> 
-                            <img class="content__img" src="assets/Frame 766.png" alt="">
+                        <picture> 
+                            <img class="content__img" src="assets/frame.png" alt="imgfinanzapp">
                         </picture>
                     </a>
                 </div> 
@@ -100,11 +110,11 @@
             <div class="columnas">
                 <h2 class="numero">02</h2>
                 <div class="columnas__content">
-                    <a href="">
-                    <p class="titulo">proyecto ecommerce</p>
+                    <a title="single" href="singleecom.html">
+                    <p class="titulo__columnas">proyecto ecommerce</p>
                     <p class="pill">Web Design</p>
-                    <picture source media="(min-width:650px)" srcset="">
-                        <img src="assets/02.png" width="100%" alt="">
+                    <picture>
+                        <img src="assets/ecom__desktop.png" alt="imgecom">
                     </picture>
                     </a> 
                 </div>
@@ -112,11 +122,11 @@
             <div class="columnas">
                 <h2 class="numero">03</h2>
                 <div class="columnas__content">
-                    <a href="">
-                        <p class="titulo">proyecto h2oh! podcast</p>
+                    <a title="single" href="singleh2oh.html">
+                        <p class="titulo__columnas">proyecto h2oh! podcast</p>
                         <p class="pill">Web Design</p>
-                        <picture source media="(min-width:650px)" srcset=""> 
-                            <img class="content__img" src="assets/iPhone 15 Pro.png" alt="">
+                        <picture> 
+                            <img class="content__img" src="assets/iphone_mockup.png" alt="imgpodcastwebdesign">
                         </picture>
                     </a>
                 </div>
@@ -124,11 +134,11 @@
             <div class="columnas">
                 <h2 class="numero">04</h2>
                 <div class="columnas__content">
-                    <a href="">
-                        <p class="titulo">Visual Design web</p>
+                    <a title="single" href="singlevisualdesign.html">
+                        <p class="titulo__columnas">Visual Design web</p>
                         <p class="pill">Web Design</p>
-                        <picture source media="(min-width:650px)" srcset=""> 
-                            <img class="content__img" src="assets/MacBook Pro 14.png" alt="">
+                        <picture> 
+                            <img class="content__img" src="assets/visual__mackbookpro.png" alt="imgvisualdesign">
                         </picture>
                     </a>
                 </div>
@@ -136,65 +146,62 @@
             <div class="columnas">
                <h2 class="numero">05</h2>
                  <div class="columnas__content">
-                    <a href="">
-                        <p class="titulo">App Ñam</p>
+                    <a title="single" href="singleapp.html">
+                        <p class="titulo__columnas">App Ñam</p>
                         <p class="pill">App Design</p>
-                        <picture source media="(min-width:650px)" srcset=""> 
-                            <img class="content__img" src="assets/iPhone 12 Pro.png" alt="">
+                        <picture> 
+                            <img class="content__img" src="assets/iphone__mockup.png" alt="imgñamapp">
                         </picture>
                     </a>
                 </div>  
             </div>
         
         </div>
-        <div class="showmore">
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6m0 0H9m9 0v9"/></svg>
+        <div class="showmore"> <!-- enlace que dirige a work, para ver más-->
+            <a href="work.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6m0 0H9m9 0v9"/></svg>
             <span>Ver más</span></a>
         </div>
     </section>
-     <!--slider-->
-     <section class="slider__container">
+     <!--slider - con 6 imagenes de proyectos-->
+     <div class="slider__container">
         <div class="slider">
             <picture>
-                <img class="slider__img" src="assets/slider 1.jpg" alt="">
+                <img class="slider__img" src="assets/slider-podcast.jpg" alt="img slider podcast">
             </picture>
             <picture>
-                <img class="slider__img" src="assets/slider 2.jpg" alt="">
+                <img class="slider__img" src="assets/slider__desktop.jpg" alt="img slider pantallas">
             </picture>
             <picture>
-                <img class="slider__img" src="assets/slider 4.jpg"  alt="">
+                <img class="slider__img" src="assets/slider__finanzapp.jpg"  alt="img slider podcast">
             </picture>
             <picture>
-                <img class="slider__img" src="assets/slider 5.jpg"  alt="">
+                <img class="slider__img" src="assets/slider__iphone.jpg"  alt="img slider finanzapp">
             </picture>
             <picture>
-                <img class="slider__img" src="assets/slider 6.jpg"  alt="">
+                <img class="slider__img" src="assets/slider_podcast_.jpg"  alt="img pantalla slider">
             </picture>
             <picture>
-                <img class="slider__img" src="assets/slider 7.jpg"  alt="">
+                <img class="slider__img" src="assets/slider__pantallas_visual.jpg"  alt="img slider app">
             </picture>
         </div>
-     </section>
-    <!--footer-->
+    </div>
+   <!--footer- cuenta con un titulo, que llama a la accion, para ponerte en contacto-->
     <section class="footer__container">
         <div class="hablemos__text mw appear">
             <p>Si te gusta lo que has visto</p>
-            <h2>Let's talk!</h2>
-            <a href="">sserena292@gmail.com</a>
+            <h2 class="titulo__footer">Let's talk!</h2>
+            <a title="email" href="#">sserena292@gmail.com</a>
         </div>
         <div class="nombre">
             <h3>Silvia Serena </h3>
         </div>
         <div class="items__footer">
-            <a href="">Contacto</a>
-            <a class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank"><img src="assets/link btn.svg" alt="" width="40px"></a>
-            <a class="svg__social" href="https://www.behance.net/silserena" target="_blank"> <img src="assets/behance btn.svg" alt=""width="40px"></a>
-            <a class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank"><img src="assets/ig btn.svg" alt=""width="40px"></a>
+            <a title="contacto" href="contacto.html">Contacto</a>
+            <a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank" rel="noreferrer"><img src="assets/link_icono.svg" alt="icono linkedin"></a>
+            <a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank" rel="noreferrer"> <img src="assets/behance__icono.svg" alt="icono behance"></a>
+            <a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank" rel="noreferrer"><img src="assets/ig_icono.svg" alt="icono ig"></a>
         </div>
     </section>
-     
-
-      
-
+    
 </body>
 </html>

@@ -1,0 +1,122 @@
+<!--
+Los singles son las paginas de cada proyecto, explicando en que consiste y con fotos de cada uno.
+La estructura de todos es la misma, salvo por el contenido, hay un par de proyectos que tienen un bloque menos de texto y otro, 
+que tiene un contenedor más con una imagen y texto.
+
+La estructura que siguen es la siguiente:
+- titulo encima de imagen
+- texto lateral con imagen
+- tres imagenes
+- Columnas con texto
+- herramientas utlizadas, 
+- footer
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single finanzapp</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script defer src="js/single.js"></script>
+    <script defer src="js/menu.js"></script>
+</head>
+<body>
+      <!--Menu header-->
+    <header class="header container">
+        <nav class="nav container">
+            <div class="nav__logo">
+               <a href="index.html"><img src="./assets/logo_volvoretta.svg" alt="logo"></a> 
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./aboutme.html" class="nav__links">About me</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./work.html" class="nav__links">Work</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./contacto.html" class="nav__links">Contact</a>
+                </li>
+             <img src="./assets/close.svg" class="nav__close" alt="icon-close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./assets/menu.svg" class="nav__img" alt="icon-menu">
+            </div>
+        </nav>
+    </header>
+
+    <!--Proyecto-->
+    <section class="titulo__single"><!--titulo con foto introductoria-->
+        <h1 class="titulo__h1__single">Finanzapp App</h1>
+        <picture>
+            <img class="img__single" src="assets/galeria/finzanzapp__titulo.jpg" alt="finanzapp img">
+        </picture>
+        <div class="single__content__uno mw appear"> <!--texto con foto lateral-->
+            <p>A través de la metodología de trabajo de Design Thinking diseñamos en clase una app que ayudase al usuario a crear objetivos de ahorro y le facilitase la gestión de su dinero. <br>
+        Ideamos una aplicación que fuese intuitiva, sencilla y atractiva visualmente. Con la idea de que facilitase al usuario crearse una rutina y asi poder cumplir sus objetivos.</p>
+            <picture>
+                <img class="img__container__single" src="assets/intro_finanzapp.jpg" alt="pantallas finanzapp">
+            </picture>
+        </div>
+        <div class="galeria__single mw appear"><!--galeria de 3 fotos con animacion appear-->
+            <picture>
+                <img src="assets/finzanzapppantallas.jpg" alt="pantallas finanzapp">
+            </picture>
+            <picture>
+                <img src="assets/pantallas_proyecto_finanzapp.jpg" alt="intro finanzapp">
+            </picture>
+            <picture>
+                <img src="assets/finanzapp__iphone.jpg" alt="finanzapp img">
+            </picture>
+        </div>
+        <div class="textos__single mw appear"><!--tres columnas con texto-->
+            <div class="texto__uno__single">
+                <p>Trabajamos en equipo y nuestro principal objetivo era seguir cada paso del Design Thinking hasta que llegáramos al resultado final. Hicimos mucho trabajo de research, benchmarking, networking, y creamos un user persona en el que nos basamos para crear nuestra app.
+                    Usamos también la matríz de necesidades, el método moscow, y el procedimiento IN and OUT. </p>
+            </div>
+            <div class="texto__dos__single">
+                <p>Siguiendo las ideas y el moodboard que teniamos, fuimos creando también el Design System, y diseñamos nuestra paleta de colores, organizamos y jerarquizamos tipografias, iconografía,  y también los componentes. El último paso fue empezar a crear los wireframes, y diseñarlos. Para terminar el proyecto, prototipamos todas las pantallas, y fuimos documentando todo el proceso, para poder tener una memoria donde explicar todo el trabajo realizado.</p>
+            </div>
+            <div class="texto__tres__single">
+                <p>No nos dió tiempo a hacer test con usuario, pero, cada una del equipo versionamos la app hacia el aspecto que más nos gustara. Fue un proyecto muy bonito en el que aprendimos como era la metodología de los dos rombos y nos sirvió deguía para poder hacer el proyecto final de UXUI.
+                </p>
+            </div>
+        </div>
+        <div class="herramientasusadas mw appear"><!--herramientas usadas-->
+            <h3>Programas usados</h3>
+            <div class="items__herramientas">
+                <picture>
+                    <img src="assets/fgima__icono.svg" alt="icono figma">
+                </picture>
+                <picture>
+                    <img src="assets/ps_icono.svg" alt="icono ps">
+                </picture>
+            </div>
+        </div>
+    </section>
+   <!--footer-->
+    <section class="footer__container">
+        <div class="hablemos__text mw appear">
+            <p>Si te gusta lo que has visto</p>
+            <h2 class="titulo__footer">Let's talk!</h2>
+            <a title="email" href="#">sserena292@gmail.com</a>
+        </div>
+        <div class="nombre">
+            <h3>Silvia Serena </h3>
+        </div>
+        <div class="items__footer">
+            <a title="contacto" href="contacto.html">Contacto</a>
+            <a title="social" class="svg__social" href="https://www.linkedin.com/in/silvia-serena-sanz/" target="_blank" rel="noreferrer"><img src="assets/link_icono.svg" alt="icono linkedin"></a>
+            <a title="social" class="svg__social" href="https://www.behance.net/silserena" target="_blank" rel="noreferrer"> <img src="assets/behance__icono.svg" alt="icono behance"></a>
+            <a title="social" class="svg__social" href="https://www.instagram.com/sil_serena" target="_blank" rel="noreferrer"><img src="assets/ig_icono.svg" alt="icono ig"></a>
+        </div>
+    </section>
+    
+</body>
+</html>

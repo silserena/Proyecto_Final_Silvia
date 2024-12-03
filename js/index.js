@@ -1,3 +1,5 @@
+/** -----------appear--------------- */
+//variable declarada
 let appearElement = document.querySelectorAll('.appear')
 
 window.addEventListener('scroll', () =>{
@@ -12,14 +14,16 @@ window.addEventListener('scroll', () =>{
 
 })
 
-// slider
+/** ------------slider---------- */
+
+//variables declaradas
 let imagenes = document.querySelectorAll('.slider__img') 
 let slider = document.querySelector('.slider') 
 let index = 0 
 
 
 
-// - Funciones
+// - Funciones del slider
 
 setInterval (() => {
     if (index < imagenes.length - 1) {
@@ -36,4 +40,18 @@ setInterval (() => {
 
 }, 5000);
 
+/** ------------Parallax--------- */
 
+//variables declaradas
+let title = document.querySelector('h1')
+let image = document.querySelector('img')
+
+window.addEventListener('scroll', () =>{
+
+    
+    let scroll = window.pageYOffset
+    let speed = 0.3
+
+    title.style.transform = 'translateY('+scroll * speed+'px)'
+
+})

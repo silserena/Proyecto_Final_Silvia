@@ -1,35 +1,84 @@
 :root{
-    --grid-responsive: repeat(auto-fit, minmax(150px, 1fr))
+    /*---colores---*/
+    --hover--color: rgba(210, 105, 30, 0.433); /*color hover*/
+    --background-color: #F0F0F0; /*color fondo*/
+    --c-color: rgb(23, 23, 23); /*color texto*/
+    --menu--color: #e2e2e2ea; /*color menu*/
+    --main--color: chocolate ; /*color acento*/
+
+    /*---Tipografia---*/
+    --display: "Montserrat", sans-serif; /*tipografia*/
+
+    /*---Tamaño titulos---*/
+    --h1: 3,5rem;   /*tamaño letra h1*/
+    --h2: 2,8rem;   /*tamaño letra h2*/
+    --h3: 2,1rem;   /*tamaño letra h3*/
+    --h4: 1,5rem;   /*tamaño letra h4*/
+    --h5: 1,2rem;   /*tamaño letra h5*/
+
+
+    /*--Body Device---*/
+
+    --body1-devide: 0,875em;
+    --body2-desktop: 0.823em;
 }
+
+/*RESET*/
+
 *{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	
-	vertical-align: baseline;
     box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+	vertical-align: baseline;
+   
    
     
     font-family: "Montserrat", sans-serif;
-    
-
-    
-    
+       
 }
 ul li{
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: rgb(23, 23, 23);
+    color: var(--c-color);
 
 }
 a:hover{
-    color: rgba(210, 105, 30, 0.433);
+    color: var(--hover--color);
     transition: 1s;
 }
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+h1{
+    font-size: var(--h1);
+}
+h2{
+    font-size: var((--h2));
+}
+h3{
+    font-size: var(--h3);
+}
+h4{
+    font-size: var(--h4);
+}
+h5{
+    font-size: var(--h5);
+}
+h6{
+    font-size: var(--h6);
+}
 
-/* globals */
+/* globals, para poder hacer la animacion de appear */
 .mw{
     max-width: 900px;
     margin: 0 auto;
@@ -44,108 +93,146 @@ body{
     width: 100%;
     height: 100%;
     font-family: Content;
-    background-color: #F0F0F0;
+    background-color: var(--background-color);
 }
-/*Intro*/
 
-.logo{
-    display: block;
-    height: 300px;
-    left: 35%;
-    margin-left: -100px;
-    position: absolute;
-    top: 350px;
-    width: 40%;
-
-  
-}
-.logo:hover { 
-    fill: #e2e2e2cc;;
-    cursor: pointer;
-    transition: 1s;
-}
-/* Menu */
-
-.header {
+/* Menu - menu hamburguesa abajo */
+.logo__menu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: #e2e2e29f; 
-    border-radius: 8px;
-
-    margin: 10px 50px 50px 100px;
-   
-    max-width: 100%;
+    justify-content: start;
+    padding-left: 1em;
+    width: 200px;
+    flex-basis: 0;
+    flex-grow: 1;
 }
-h1{
-    font-size: 80px;
-}
-.header__nav__items, .social__items {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    font-size: 1em;
-
-}
-
-.social__items:hover{
-    fill: #cacacacc;
-    transition: 1s;
-}
-
-/*text*/
-.text__summary{
+.header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    background-color: var(--menu--color); 
+    border-radius: 8px;
+
+    height: 10vh;
+    width: 97.5vw;
+    margin: 20px 20px 20px 20px;
 }
-.text__summary__intro{
+/*About, work contact - container*/
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: end;
+    gap: 4em;
+    padding-right: 2em;
+    
+}
+
+/*Ig, Linkedin y Behance - container*/
+.header__nav__social{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*Items ig, linkedin y behance*/
+.social__items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ 
+}
+/*Items about, contact y work*/
+.header__nav__items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+
+}
+
+
+.social__items:hover{
+    fill: var(--hover--color);
+    transition: 1s;
+}
+
+/*Para el menu hamburguesa*/
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+
+
+/*text index*/
+
+
+h1{
+    font-size: 80px;
+}
+.text__summary{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    gap: 1em;
-
+    max-width: 100%;
+    margin: auto;
+    padding: 2em;
 }
-h3{
-    font-weight: lighter;
+.texto{
+    font-weight: lighter ;
 }
-/*IMAGENES*/
+
+/*---IMAGENES DEL INDEX-----*/
+
+img{
+    width: 100%;
+}
 .container__firstblock{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 20px 20px 20px;
-    width: 100%;
+    margin: auto;
+
+    max-width: 100%;
+    gap: 2em;
+   
+   
   
 }
 .container__content{
     display: flex;
-    flex-direction: row;
+    flex-direction: colum;
     align-items: center;
     justify-content: center;
     gap: 1em;
-    width: 100px;
+    width: 100%;
+    padding: 1em;
+    margin: auto;
+     
     
 }
-.imagenrecurso__dos , .imagenrecurso__uno , .imagenrecurso__tres{
+.imagenrecurso__dos , .imagenrecurso__uno , .imagenrecurso__tres {
     border-radius: 24px;
     width: 400px;
 }
 /* BLOQUES TEXTO*/
+
 .container__texto{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 20px 20px 20px 20px;
+    margin: auto;
     max-width: 100%;
+  
 }
 .bloques__texto{
     display: flex;
@@ -153,15 +240,19 @@ h3{
     align-items: center;
     justify-content: center;
     gap: 5em;
-    width: 90%;
+    width: 100%;
+    margin: auto;
+    padding: 2em;
+  
 }
 .bloquetexto__uno , .bloquetexto__dos , .bloquetexto__tres{
     display: block;
     width:85%;
     font-weight: lighter;
+   
 }
 
-/*Galeria horizontal*/
+/*Galeria columnas con proyecto y numero en index - horizontal*/
 
 .container__gallery {
    display: flex;
@@ -179,12 +270,11 @@ h3{
 .gallery{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 5em;
+    gap: 1em;
     max-width: 100%;
-    padding: 4em;
+    padding: 1em;
     margin: auto;
     width: 100%;
     
@@ -192,29 +282,27 @@ h3{
 .columnas{
     display: flex;
     flex-direction: column;
-    
+    margin: auto;
+    padding: 2em;
     gap: 5em;
     width: 300px;
     height: 60vh;
     
 }
 .columnas:hover{
-    background-color: rgba(210, 105, 30, 0.433);
+    background-color: var(--hover--color);
     transition: 1s;
 }
+
 .numero{
     display: block;
     flex-direction: column;
     position: relative;
     
-    color: chocolate;
+    color: var(--main--color);
     font-size: 80px;
 
     
-}
-.columnas__content{
-    
-
 }
 .content__img{
   width: 100%;
@@ -222,14 +310,14 @@ h3{
 }
 .pill{
     
-    border: solid chocolate ;
+    border: solid var(--main--color);
     border-radius: 16px;
     padding: 0.5em 1em;
     margin: 0.25em;
-    color: chocolate;
+    color: var(--main--color);
     width: 120px;
 }
-/*Slider*/
+/*--Slider---*/
 
 .slider__container{
     display: flex;
@@ -253,8 +341,6 @@ h3{
 
     max-width: 100%;
     max-height: 1000px;
-   
-
 }
 
 .slider, .slider__img{
@@ -262,7 +348,319 @@ h3{
     object-fit: cover;
 }
 
-/*Footer*/
+
+/*About me*/
+
+.text__summary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2em;
+
+}
+.container__firstblock__aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    margin: auto;
+    max-width: 100%;
+}
+.container__content__aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.aboutme__text__img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+    max-width: 100%;
+    margin: auto;
+   
+}
+.imagen__aboutme{
+    border-radius: 24px;
+
+}
+
+
+.bloques__textosaboutme{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 1em;
+    padding: 2em;
+    max-width: 100%;    
+}
+
+/*Skills*/
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 80%;
+    margin: auto;
+    padding: 2em;
+}
+
+.skills__items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: start;
+    justify-content: start;
+    gap: 1em;
+    margin: auto;
+    width: 100%;
+
+}
+
+.skills__items__style{
+    border: solid var(--main--color) ;
+    border-radius: 16px;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    color: var(--main--color);
+
+}
+
+/*work*/
+
+.container__galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+    margin: auto;
+    max-width: 100%;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 80%;
+
+}
+.item__gallery{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.text__hover{
+    position: absolute;  
+    opacity: 0;   
+    font-weight: 200; 
+}
+
+.galeria__img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+   
+}
+
+.galeria .galeria__img{
+    width: 100%;
+    gap: 1em;
+    margin: 1em;
+    padding: 1em;
+     
+}
+.item__gallery:hover .text__hover {
+    filter: grayscale(100);
+    transition: .5s;
+    opacity: 100%;
+    color: var(--c-color);
+    font-weight: lighter;
+ 
+ }
+.item__gallery:hover{
+    filter: grayscale(100);
+    transition: .5s;
+
+}
+
+/*SINGLE*/ 
+
+/*PARALLAX*/
+.img__single{
+    width: 100%;
+}
+
+/*--- diseño css para todas las paginas de single por igual. Todas comienzan con un titulo en h1, y a continuación una imagen
+ Siguen con un div que tiene texto e imagen, para continuar con tres imagenes, y debajo tres parrafos que van independientes, ya que hay un par de singles que no tienen tanto contenido y solo tienen uno o dos parrafos.
+ 
+ El single de la App de Ñam, tiene ademas, otro bloque extra con un div que se llama left con una imagen extra y texto.*/
+.titulo__single{ 
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   max-width: 100%;
+  
+}
+.lista__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: left;
+    justify-content: center;
+    
+}
+
+.single__content__uno{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    gap: 1em;
+    padding: 2em;
+    margin: auto;
+    font-weight: lighter;
+
+
+}
+.galeria__single{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+
+    padding: 2em;
+    
+}
+
+.textos__single{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2em;
+    gap: 2em;
+    margin: auto;
+    font-weight: lighter;
+}
+
+/* Añadi un bloque con las herramientas usadas*/
+.herramientasusadas{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+    max-width: 100% ;
+}
+.items__herramientas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em;
+
+}
+/*left - imagen con texto final de la App Ñam - Solo está en ese single*/
+.left{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    gap: 1em;
+    padding: 2em;
+    margin: auto;
+
+}
+
+.left__img, .left__content{
+    flex-basis: 0;
+    flex-grow: 1;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+
+}
+
+.left__content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 2em;
+    align-items: start;
+
+}
+/*Contacto - formulario contacto */
+.container__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.form__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+    gap: 2em;
+   
+
+}
+.form__text{
+    width: 50vw;
+    min-height: 40vh;
+    border: none;
+    
+}
+
+.enviar{
+    padding: 1em;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    color: #cacacacc;
+    border: none;
+
+}
+.enviar:hover{
+    background-color: #1c1c1cba;
+    transition: .5s;
+}
+
+
+
+
+/*Footer - esta formado por texto ,  un titulo, y parrafo, seguido del email y luego el enlace del contacto y los iconos de las redes sociales*/
 .footer__container{
     display: flex;
     flex-direction: column;
@@ -281,9 +679,10 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
     gap: 5em;
 }
-h2{
+.titulo__footer{
     font-size: 100px;
 }
 .nombre{
@@ -293,15 +692,317 @@ h2{
     justify-content: center;
     margin: 0;
     padding: 1em;
+    font-weight: lighter;
 
 }
 .items__footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
     max-width: 100%;
     gap: 2em;
 
+}
+
+/*MENU HAMBURGUESA
+
+Aqui están los media para poder ajustar el contenido de las pantallas al responsive, además del menu de hamburguesa.
+
+- En el menu de hamburguesa, como he comentado anteriormente, las opciones de about me, work y contact se juntan en el menu hamburguesa, que al pinchar en ella se despliega a la derecha y tiene la X para cerrar.*/
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+       flex-basis: 0;
+       flex-grow: 1;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 0;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        background-color: #e2e2e2ea; 
+        border-radius: 8px;
+        gap: 1rem;
+        margin: auto;
+    }
+
+    .header__nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .header__nav__social{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 0;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+
+        
+    }
+
+    .header__nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .header__nav__items{
+        flex-direction: column;
+      
+    }
+
+    .header__nav__items li a {
+        color: #ecececec;
+    }
+}
+
+/* Aqui empieza la parte responsive del resto de pantallas
+*/
+@media screen and (max-width: 550px) {
+
+    /*INDEX - TITULO Y SUBTITULO*/
+    .text__summary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+        padding: 2em;
+
+    }
+
+    .texto{
+        font-weight: lighter ;
+        font-size: 16px;
+    }
+
+    /*GALERIA*/
+    .container__firstblock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 2em;
+        max-width: 100%;
+        gap: 2em;
+       
+      
+    }
+    .container__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        margin: auto;
+         
+        
+    }
+    .imagenrecurso__dos{
+        width: 90vw;
+    }
+   .imagenrecurso__tres{
+      display: none;
+    }
+    .imagenrecurso__uno{
+        display: none;
+    }
+
+    /*TEXTOS INDEX*/
+    .container__texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        max-width: 100%;
+
+      
+    }
+    .bloques__texto{
+       display: flex;
+       flex-direction: column;
+       align-items: top;
+       justify-content: center;
+       margin: auto;
+      
+    }
+
+    /*COLUMNA PROYECTOS INDEX*/
+    .container__gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: smaller;
+        padding: 2em;
+        max-width: 100%;
+        gap: 2em;
+    }
+    
+    /*ABOUT ME*/
+    .text__summary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        margin: auto;
+        padding: 2em;
+        max-width: 100%;
+    }
+    .titulo{
+        margin: auto;
+        padding: .3em;
+        font-size: 64px;
+    }
+    .aboutme__text__img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bloques__textosaboutme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 1em;
+        padding: 2em;
+        max-width: 100%;    
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        width: 80%;
+        margin: auto;
+        padding: 2em;
+    }
+    .softskills{
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .hardskills{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    /*WORK*/
+    .galeria{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        gap: 1em;
+        max-width: 100%;
+    
+    }
+    .titulo__columnas{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 1em;
+    }
+  /*FOOTER*/
+    .titulo__footer{
+        font-size: 60px;
+    }
+    /*  contacto*/
+    .container__contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 2em;
+    }
+    .form__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 1em;
+        gap: 2em;
+       
+
+    }
+    .form__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 85vw;
+        border: none;
+        margin: auto;
+        
+    }
+
+    /*SINGLE*/
+    .titulo__single{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+       
+     }
+     .titulo__h1__single{
+        font-size: 64px;
+     }
+     .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 2em;
+        gap: 1em;
+        max-width: 100%;
+     }
 }
